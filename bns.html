@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy and Sell</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class = "nav">
+		<a href="index.html" style="color: #08997d"><div class="navtext"><b>PROJECTS</b></div></a>
+		<a href="about.html"><div class="navtext">ABOUT ME</div></a>
+		<a href="#mail_img"><div class="navtext">CONTACT</div></a>
+		<a href="https://drive.google.com/file/d/1qaQoGlwWKlsT9Bgo_4lsw8UY78XpJfQl/view?usp=sharing"><div class="navtext" >RESUME</div></a>
+	</div>
+
+		<div class = "project_content">
+			<div class="projectname">Buy and Sell</div>
+			<div class = "under"></div>
+			<div class="subtitle">A college campus based app to sell used articles online</div>
+			<div id= "bns_picture"><img src="bns1.png" style="width: 800px; height:600px"></div>
+			<div class="sub_subheading">Overview</div>
+			<div class ="project_text"><b>IMG:</b> Information and management group is a software development group at IIT Roorkee that develops software systems and niche applications which empathize with the residents of IIT Roorkee, making their digital stay as easy as possible. Channeli is the intranet portal for the students and faculty of IITR.
+			</div>
+			<div class="sub_subheading">Why buy and sell?</div>
+			<div class ="project_text">As students, there are a lot of articles that we have to use for just one semester (drafters) or at specific times (trunks while changing rooms or hostels). Students also prefer to sell their belongings to residing students at the time of graduating. With Buy and Sell, IMG aims to provide a common online platform for prospective buyers to be able to find interested sellers and vice-versa.</div>
+			<div class="project_img" ><img src="bnswhy.png" style="width: 800px"></div>
+			<div class ="project_text"><b>Problem:</b> The existing Buy and Sell app had a murky navigation system and unclear organisation. With Channeli being redesigned and redeveloped, it was a great opportunity to ideate and improve upon the existing app.</div>
+			<!--<div class="sub_subheading">Design Process</div>-->
+			<div class="subheading">Understanding the User</div>
+			<div class ="project_text">Being a student of the institute as well as a member of the user base, I analyzed the app and drew some assumptions based on how I, as a user, would interact with this app. I also talked to some of my peers to understand their grievances and qualms from the app:</div>
+			<div class="project_img" ><img src="bnsexisting.png" style="width: 800px"></div>
+			<div class ="project_text"><b>Some problems with the existing design:</b>
+				<ul>
+				  <li>Filters and sorting options were the same which meant only one could be selected at a time. This had to be changed.</li>
+				  <li>There were a limited number of categories which were hidden away in a drop-down menu. For such a small number of categories, drop down hampered discoverability of any particular category</li>
+				  <li>The default “Filter by category” was “latest” which can confuse readers making them think that it as a sorting option rather than types of categories.</li>
+				  <li>Not much information was available on the cards which prompted the user to click on the card and then back, effectively creating resistance while exploring the app.</li>
+				</ul>
+			</div>
+			<div class ="project_text">To verify these conclusions and to test the feasibility of some of the features, I decided to conduct a survey.</div>
+			<div class ="project_text"><b>Survey:</b> The primary challenge I faced while forming a questionnaire was to make sure I received genuine responses. It was important that I do not coax a response out of the respondents or lead them to a specific answer. To avoid these issues I made the survey completely anonymous. The questions included were not aggressive or judgemental to make sure the respondent won’t feel attacked and fill an ingenuine response.</div>
+			<div class ="project_text">The primary users were the students of IITR and to understand what motivated them to sell their objects and what were their concerns while selling or buying stuff online, I circulated a Google form. I hoped to find the utility of an option to “Rent” an object temporarily not in use such as drafters etc.</div>
+			<div class ="project_text"><b>Insights drawn:</b>
+				<ol>
+				  <li>A lot of students buy articles that are useful for only a limited period of time and are willing to sell it. The primary motive behind selling an item is that it of no use to them followed by the money one might make out of it.</li>
+				  <li>Since the number of people checking channel-i feed was very low, the probability of a person coming across a request post on feed their for something they have and are not using is very low. Moreover, the primary motive behind selling an object was because it was of no use to the seller, hence the utility of the request option was low.</li>
+				  <li>People were apprehensive of lending their objects to unknown people when they had to use it again, so the utility of rent option was low and it was not implemented.</li>
+				 </ol>
+			</div>
+			<div class="subheading">Deciding on the features</div>
+			 <div class ="project_text">
+			 	<ol>
+			 		<li>Based on the data collected from the survey forms, “Item for rent” feature was not implemented since users were reluctant to lend their items to strangers if they had to use it again.</li>
+			 		<li>Even though the utility of the “Request” option seemed low, about 30% of all the items listed were in the request’s section. I decided to keep this feature because of it’s substantial user base.</li>
+			 		<li>People willing to sell an article or request one can do so by filling a form, submitting which their item would be added to the list.</li>
+			 		<li>If a user looking to buy a specific article could not find one for sale, they can add a request for that and add the category to “Watching Category”. Whenever an article would be added to this category, the user would receive a desktop notification.</li>
+			 	</ol>
+			</div>
+			<div class ="project_text">A <b>user account</b> consists of:</div>
+			<div class="project_img" ><img src="bnsuser.png" style="width: 800px"></div>
+			<div class="subheading">Deciding the information architecture</div>
+			<div class ="project_text">
+				<ul>
+					<li><b>Navigation: </b>One of the problems with the older design was the navigation between categories which was in the form of a dropdown which hid relevant information and added an unnecessary step in navigation. Another was the confusing mix of categories and sorting options in the same drop-down. I decided to separate sorting and ditch the drop-down and go for a navigation bar at the top of the page.<br>
+						Two kinds of users would use this app:
+						<ol>
+							<li>Those looking to sell/request for an item.</li>
+							<li>Those looking to buy an item.</li>
+						</ol>
+						<div class ="project_text">Here is the user flow of the app:</div>
+						<div class="project_img" ><img src="bnsflow.png" style="width: 800px"></div>
+					</li>
+					<li><b>Organisation:</b> The organisation should be such that the user can easily understand the importance of each element and its hierarchy. For example, the same categories were to be present in both items for sale and requested items. Therefore, it was placed below the toggle between them. The size and weight of information on the cards were made to imply their importance as well.
+					</li>
+					<li><b>Searching:</b> I decided to have a global search at the top. Upon entering a word, the results would be presented in a drop-down along with whether the item is being requested or is for sale. Upon clicking, the user would be directed to the page for that article.</li>
+				</ul>
+			</div>
+			<div class="subheading">Wireframing</div>
+			<div class ="project_text">Once I had a picture of how I wanted to present information on my website, I started the wire-framing process. Initially, I used a pen and paper before moving to Figma.</div>
+			<div class ="project_text">
+				<ul>
+					<li>Deciding on the navigation: I started with side navigation which was quickly shot down because it couldn’t convey the hierarchy and took too much unnecessary attention and space. I decided to go with top navigation with a sequential organisation. Upon seeing the screen, the user can make out that all the categories are under items or sale or requested items.
+						<div class="project_img" ><img src="bnswireframe.png" style="width: 800px"></div>
+					</li>
+					<li>Card structure: I had to include relevant information in such a way that the card didn’t end up looking too crowded. I read a couple of articles and discussed with other designers and came up with the final design. The name and the price along with the image of an item are the things that are most interesting to the buyer and so I gave them more emphasis.
+						<div class="project_img" ><img src="bnscard.png" style="width: 800px"></div>
+					</li>
+					<li>User account: User account is the place where the user can find all their uploaded items and edit or delete them. The categories watching can be updated here as well.</li>
+				</ul>
+			</div>
+			<div class="subheading">Mockups</div>
+			<div class="project_img" ><img src="bnsdeliver.png" style="width: 800px"></div>
+			<div class="subheading">Logo</div>
+			<div class ="project_text">I was also tasked with designing the logo for this app. I was given a few constraints to work with according to the common theme for all the logos on channeli. The basic idea was to have a square logo with a minimalistic design. I considered two options:
+			</div>
+			<div class="bnslogo">
+				<div class="project_img" ><img src="bnslogo1.png" ></div>
+				<div class="project_img" ><img src="bnslogo2.png" ></div>
+			</div>
+			<div class ="project_text">
+				I finally decided to go with the second one with a price tag. It retains its shape and is easy to identify even in smaller images compared to the shopping cart image.
+			</div>
+			<div class="sub_subheading">Key Learnings</div>
+			<div class ="project_text">
+				<ol>
+					<li>I learned how to form questionnaires and conduct surveys. I used small, direct and simple questions to make it easier for the user to answer them. I used Google Forms to conduct the survey as most of my target user base were most familiar and comfortable with it.</li>
+					<li>How to analyze data collected from a survey and utilising to make key decisions with regards to features in the app.</li>
+					<li>How to convey information in an efficient manner. This app is heavily based on information dissemination and so I learned about information architecture and its major components.</li>
+				</ol>
+			</div>
+			<div class = "space"></div>
+
+		</div>
+		<div class = "contact">
+		<div class = "say_hello">Say Hello!</div>
+		<div class = "contact_img"><img src="contact_mail.png"></div>
+		<div class="mail" id="mail_img">manya@ph.iitr.ac.in</div>
+		<div class="contact_text">Please feel free to drop a mail if you wish to know more about me, or to discuss design in general!</div>
+		<div class="social_links">
+			<a href="https://github.com/manya-s"><div class="linkimg"><img src="github1.png" style="width: 75%"></div></a>
+			<a href="https://medium.com/@manyas0209"><div class="linkimg"><img src="medium1.png" style="width: 75%"></div></a>
+			<a href="https://dribbble.com/manyas"><div class="linkimg"><img src="dribble1.png" style="width: 75%"></div></a>
+			<a href="https://www.linkedin.com/in/manya-singh-7a8a09162/"><div class="linkimg"><img src="linkedin1.png" style="width: 75%"></div></a>
+		</div>
+		<div class="madewith">made with love by Manya</div>
+	</div>
+
+	
+
+</body>
+</html>
