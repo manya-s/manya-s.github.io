@@ -1,4 +1,7 @@
-
+@font-face{
+	font-family: Maven Pro;
+	src: url(MavenPro-Bold.ttf);
+}
 .nav{
 	display: flex;
 	flex-direction: row;
