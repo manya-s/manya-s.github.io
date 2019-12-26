@@ -103,6 +103,7 @@
 	margin-top: 120px;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	
 }
 .project_container:hover {
@@ -235,8 +236,8 @@ a:active{
 	padding-top: 4px;
 }
 
-.index_project{
-	padding-left: 60px;
+.home_image{
+	padding-right: 60px;
 }
 .index_des{
 	font-family: Maven Pro;
@@ -248,7 +249,7 @@ a:active{
 	padding-top: 30px;
 }
 
-@media screen and (min-width:  400px){
+@media screen and (max-width:  400px){
 	#aboutimg{
 		float:right;
 	}
