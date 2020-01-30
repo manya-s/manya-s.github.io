@@ -254,7 +254,14 @@ a:active{
 	padding-top: 30px;
 }
 
-@media screen and (max-width:  1200px){
+.project_img{
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width:  600pt){
 	.about_container{
 	display: flex;
 	flex-direction: column;
